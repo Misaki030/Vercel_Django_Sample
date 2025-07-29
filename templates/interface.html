@@ -1,0 +1,21 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sample</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <p>
+        Vercel x Django Sample<br>
+        <img src="{% static 'img/404.jpg' %}"><br>
+        code: {{ data.code }}<br>
+        msg: {{ data.msg }}<br>
+    </p>
+</body>
+
+</html>
